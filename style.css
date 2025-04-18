@@ -1,0 +1,168 @@
+:root {
+  --primary: #2b2d42;
+  --accent: #70c1b3;
+  --accent-dark: #42b2a3;
+  --bg-light: #f8f9fa;
+  --bg-dark: #edf2f4;
+  --font-main: 'Poppins', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-light);
+  color: var(--primary);
+  line-height: 1.6;
+}
+
+header {
+  background: var(--accent);
+  color: #fff;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 1.8rem;
+}
+
+nav a {
+  color: #fff;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #fdfcdc;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, #d0f4de, #a9def9);
+  color: var(--primary);
+}
+
+.hero img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 5px solid var(--accent);
+  margin-bottom: 1.5rem;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(112, 193, 179, 0.3);
+}
+
+.hero h2 {
+  font-size: 2.4rem;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 1rem auto;
+  font-size: 1.2rem;
+}
+
+.section {
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.section:nth-of-type(even) {
+  background-color: #f1fdfb;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.section h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: var(--accent);
+  margin: 0.5rem auto 0;
+}
+
+.btn-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.btn-section {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 12px;
+  background-color: var(--accent);
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-section:hover {
+  background-color: var(--accent-dark);
+  transform: translateY(-2px);
+}
+
+.project-list {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.project-item {
+  margin-bottom: 2rem;
+}
+
+.project-item h3 {
+  margin-bottom: 0.5rem;
+  color: var(--accent-dark);
+}
+
+.project-item p {
+  margin-bottom: 0.3rem;
+}
+
+footer {
+  background: var(--accent);
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #fdfcdc;
+  text-decoration: none;
+}
+
+.custom-link {
+  color: var(--accent-dark);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.custom-link:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
